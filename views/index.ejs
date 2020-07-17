@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Travel Expert</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar h-nav-resp">
+    <ul class="nav-list v-class-resp">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/gallery" destination">Destination </a></li>
+      <li><a href="/#contact">Contact Us</a></li>
+      <li><a href="/login">Login </a></li>
+      <li><a href="/register">SignUp</a></li>
+    </ul>
+
+    <!-- Burger Menu for Assignment2-->
+    <div class="burger">
+      <div class="line"> </div>
+      <div class="line"> </div>
+      <div class="line"> </div>
+
+      <div>
+  </nav>
+
+  <section class="background firstSection">
+    <div class="box-main">
+      <div class="second-half"></div>
+      <img src="images/logo.png" alt=" Company Logo" width=50% </div>
+
+
+      <div class="first-half">
+        <p1 class="text-big"> Get Ready for Europe with us!</p1>
+        <p2 class="text-Small"> Book vacation packages with Travel Expert and save your
+          money, Guaranteed!</p2>
+        <div class="buttons">
+          <button class="btn">
+            <a href="/register"> SignUp
+          </button></a></button>
+        </div>
+      </div>
+
+  </section>
+  <h1 class="text-center">Destination Gallery</h1>
+
+  <section class="destination">
+    <main class="gallery"> </main>
+
+    
+  </section>
+
+  
+  <h1 class="text-center"> Contact Us </h1>
+
+  <section class="contact" id="contact">
+    <div class="form">
+
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mrgyybwk"
+        method="post">
+
+
+
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name*</label>
+          <input id="full-name" class="form-input" type="text" name="name" placeholder="First and Last" required="">
+          <label for="email-address">Email Address*</label>
+          <input id="email-addredd" class="form-input" type="email" name="reply" placeholder="email@domain.tld"
+            required="">
+          <label for="message">Message*</label>
+          <textarea class="form-input" rows="5" name="message" id="message" placeholder="Message"
+            required=""></textarea>
+          <input class="form-input" type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input class="btn-drk" type="submit" value="Log-in">
+      </form>
+
+    </div>
+
+  </section>
+ 
+  <%- include('./partials/foot'); %>
+  <script src="js/resp.js"></script>
+  <script src="js/burger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <%- include('./partials/css-global'); %>
+  <title>Destination/<%= title %>!</title>
+   
+</head>
+<body>
+  <header>
+  <nav class="navbar h-nav-resp">
+    <ul class="nav-list v-class-resp">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/gallery" destination">Destination </a></li>
+    </ul>
+  </nav>
+      <figure>
+      
+  
+
+      <img src="http://picsum.photos/id/<%= id %>/600" alt="<%= title %>">
+      <figcaption>Best Place to Travel in 20202:<%= title %>!</figcaption>
+
+      <figcaption> Description: <%=description%> </figcaption> 
+      <figcaption> Read More <a href=<%=attribution.url%>><%=attribution.url%></a></figcaption></figure>
+			
+
+      
+
+    </figure>
+  
+  </header>
+  
+
+
+  <%- include('./partials/foot'); %>
+</body>
+</html>

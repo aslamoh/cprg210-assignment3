@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Travel Expert</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar h-nav-resp">
+    <ul class="nav-list v-class-resp">
+      <div class="logo"><img src="images/logo1.png"></div>
+      <li><a href="/">Home</a></li>
+      <li><a href="/gallery">Destination </a></li>
+      <li><a href="/#contact">Contact Us</a></li>
+      <li class="active"><a href="/login">Login </a></li>
+      <li><a href="/register">SignUp</a></li>
+    </ul>
+
+    <!-- Burger Menu for Assignment2-->
+
+    <div class="burger">
+      <div class="line"> </div>
+      <div class="line"> </div>
+      <div class="line"> </div>
+      <div>
+
+  </nav>
+
+  <br>
+
+  <h1 class="text-center"> Login</a></h1>
+
+  <section class="contact" id="contact">
+    <div class="form">
+      <form action="https://formspree.io/mrgyybwk" method="POST" class="log-in">
+
+        <label for="username">UserName* </label>
+        <input Id="username" class="form-input" type="text" name="username" placeholder=" Enter Username" required="">
+
+        <label for="pwd">Password* </label>
+        <input id="pwd" class="form-input" type="password"="8" name="pwd" placeholder=" Enter Password" required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Invalid Password: 1  number 1 uppercase Minimum 8  characters">
+
+        <input class="btn-drk" type="submit" value="LOGIN">
+
+        <br>
+        <br>
+        <h3> Don't have account? <a href="register.html">SignUp</a></h3>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <%- include('./partials/foot'); %>
+  <!-- js for  Burger menu-->
+
+  <%- include('./partials/gallery-js'); %>  
+
+
+</body>
+
+</html>
