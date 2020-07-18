@@ -79,6 +79,8 @@ fetch('https://aslam-cprg210-assignment.herokuapp.com/api/destinations')
 	.then(function(data) {
 		const imgList = data;
 
+		console.log(imageList);
+
 		// Variable where we will store our img tags
 		let imgTemplate = '';
 
