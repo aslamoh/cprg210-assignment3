@@ -72,7 +72,7 @@
 // 	navbar.classList.toggle('h-nav-resp');
 // });
 //-------------------------------------------new
-fetch('http://aslam-cprg210-assignment.herokuapp.com/api/destinations .')
+fetch('http://aslam-cprg210-assignment.herokuapp.com/api/destinations')
 	.then(function(response) {
 		return response.json();
 	})
