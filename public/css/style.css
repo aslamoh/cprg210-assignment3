@@ -17,15 +17,13 @@ html {
 	scroll-behavior: smooth;
 }
 h1 {
-	text-align:center;
+	text-align: center;
 	background-color: rgb(41, 34, 34);
 	padding-top: 30px;
 	font-size: 30px;
 	color: white;
 	font-family: 'Roboto', sans-serif;
 }
-
-
 
 /*Styling for Nav bar*/
 
@@ -141,7 +139,7 @@ ul li.active a {
 	font-weight: bold;
 	background: 2px;
 	color: black;
-	background-color:blanchedalmond;
+	background-color: blanchedalmond;
 
 	cursor: pointer;
 	border-radius: 8px;
@@ -303,7 +301,6 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	
 }
 /* destination gallery */
 .gallery {
@@ -317,7 +314,6 @@ h3 {
 	justify-content: center;
 
 	margin: auto;
-	
 }
 
 .gallery img {
@@ -325,7 +321,6 @@ h3 {
 	justify-content: center;
 	width: 100%;
 	height: auto;
-
 }
 /*******************/
 /**** button  ****/
@@ -347,16 +342,14 @@ h3 {
 	background-color: blanchedalmond;
 }
 
-figure{
-	display:inline-flexbox;
+figure {
+	display: inline-flexbox;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 }
-
-
 
 /*Responsive css */
 
@@ -400,11 +393,7 @@ figure{
 		border-radius: 8px;
 		background-color: blanchedalmond;
 	}
-	
 
-
-
-	
 	/**********************************************/
 	/***burger menu visible for responsive screen*/
 
@@ -421,5 +410,18 @@ figure{
 	}
 	.btn-drk {
 		background-color: blanchedalmond;
+	}
+	/* adjust text-footer for responsive */
+	.text-footer {
+		display: flex;
+		justify-content: center;
+		height: 5vh;
+		text-align: center;
+		margin-top: 10px;
+		padding-top: 15px;
+		background-color: rgb(41, 34, 34);
+		font-size: 20px;
+		color: white;
+		font-family: 'Roboto', sans-serif;
 	}
 }
