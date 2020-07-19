@@ -10,13 +10,16 @@
 
 <body>
   <nav class="navbar h-nav-resp">
-    <ul class="nav-list v-class-resp">
+    <%- include('./partials/nav-list'); %>
+    
+
+    <!-- <ul class="nav-list v-class-resp">
       <li class="active"><a href="/">Home</a></li>
       <li><a href="/gallery" destination">Destination </a></li>
       <li><a href="/#contact">Contact Us</a></li>
       <li><a href="/login">Login </a></li>
       <li><a href="/register">SignUp</a></li>
-    </ul>
+    </ul> -->
 
     <!-- Burger Menu for Assignment2-->
     <%- include('./partials/burger-menu'); %>

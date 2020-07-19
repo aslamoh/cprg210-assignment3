@@ -1,0 +1,25 @@
+ <ul class="nav-list v-class-resp">
+      <li ><a href="/">Home</a></li>
+      <li ><a href="/gallery" destination">Destination </a></li>
+      <li ><a href="/#contact">Contact Us</a></li>
+      <li ><a href="/login">Login </a></li>
+      <li ><a href="/register">SignUp</a></li>
+  </ul>
+  
+  <script>
+      for (var i = 0; i < document.links.length; i++) {
+      if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active';
+    }
+    }
+
+  </script>
+  
+  <style>
+    
+    a.active {background:red;}
+
+</style>
+    <!-- /* <li class="active"><a href="/">Home</a></li> */ -->
+
+    
