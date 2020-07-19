@@ -227,6 +227,7 @@ fieldset {
 	align-items: center;
 	font-size: 20px;
 	font-weight: bold;
+	background-color: blanchedalmond;
 	color: black;
 	font-family: 'Roboto', sans-serif;
 }
@@ -413,15 +414,9 @@ figure {
 	}
 	/* adjust text-footer for responsive */
 	.text-footer {
-		display: flex;
-		justify-content: center;
+		
 		height: 5vh;
-		text-align: center;
-		margin-top: 10px;
-		padding-top: 15px;
-		background-color: rgb(41, 34, 34);
 		font-size: 20px;
-		color: white;
-		font-family: 'Roboto', sans-serif;
 	}
+	
 }
