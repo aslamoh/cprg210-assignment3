@@ -16,6 +16,17 @@ a {
 html {
 	scroll-behavior: smooth;
 }
+h1 {
+	text-align:center;
+	background-color: rgb(41, 34, 34);
+	padding-top: 30px;
+	font-size: 30px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
 /*Styling for Nav bar*/
 
 .navbar {
