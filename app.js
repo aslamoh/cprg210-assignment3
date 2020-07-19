@@ -10,7 +10,7 @@ const Destination = require('./models/destination.js');
 const mongoDB = process.env.MONGODB_URL;
 
 // Set up default mongoose connection
-mongoose.connect(mongoDB, { useUnifiedTopology: true,useNewUrlParser: true });
+mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true });
 
 // Get the default connection
 const db = mongoose.connection;
@@ -20,7 +20,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Set a callback to let us know we've successfully connected
 db.once('open', function() {
-  console.log('Connected to DB...');
+	console.log('Connected to DB...');
 });
 //-------------------------------------//
 
@@ -45,34 +45,39 @@ app.get('/gallery', function(request, response) {
 	response.render('gallery', {});
 });
 
-
 app.get('/:id', function(request, response) {
 	// model.findOne returns the first object it finds
-  // model.find will always return an array, even if it only finds one 
-  Destination.findOne({'id': request.params.id}, function(error, destination) {
-  
-    // Check for IDs that are not in our list
-    if (!destination) {
-      return response.send('Invalid ID.');
-    }
+	// model.find will always return an array, even if it only finds one
+	Destination.findOne({ id: request.params.id }, function(error, destination) {
+		// Check for IDs that are not in our list
+		if (!destination) {
+			return response.send('Invalid ID.');
+		}
 
-	response.render('destination-single', destination);
+		response.render('destination-single', destination);
+	});
 });
-})
 //********************************** */
 app.get('/api/destinations', function(request, response) {
-	Destination.find(function (error, destinations) {
-	response.json(destinations);
-});
+	Destination.find(function(error, destinations) {
+		response.json(destinations);
+	});
 });
 
 // if no file or endpoint found, send a 404 error as a response to the browser
 
 // if no file or endpoint found, send a 404 error as a response to the browser
-app.use(function(req, res, next) {
-	res.status(404);
-	res.send('404: File Not Found');
-});
+
+app.use(function( request, response) {
+		response.status(404);
+		// res.find(function(error,response) {
+		response.render('404-error', {})
+		});
+
+// app.use(function(req, res, next) 
+// 	res.status(404);
+// 	res.send('404: File Not Found');
+// });
 
 // start up server
 const PORT = process.env.PORT || 3000;
