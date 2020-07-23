@@ -352,6 +352,25 @@ figure {
 	font-size: 20px;
 }
 
+input:required:invalid, input:focus:invalid {
+	
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+input:required:valid {
+	
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+ 
+
+
+
+
+
+
+
+
 /*Responsive css */
 
 @media only screen and (max-width: 680px) {

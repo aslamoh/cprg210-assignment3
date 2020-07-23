@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./partials/head'); %>
-    <title>Travel Expert/SignUp</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel Expert</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
     <nav class="navbar h-nav-resp">
-        <%- include('./partials/nav-list'); %>
-
-        <!-- <ul class="nav-list v-class-resp">
+        <ul class="nav-list v-class-resp">
             <div class="logo"><img src="images/logo1.png"></div>
             <li><a href="/">Home</a></li>
             <li><a href="/gallery">Destination </a></li>
             <li><a href="/#contact">Contact Us</a></li>
             <li><a href="/login">Login </a></li>
             <li class="active"><a href="/register">SignUp</a></li>
-        </ul> -->
+        </ul>
 
-        <%- include('./partials/burger-menu'); %>
+        <div class="burger">
+            <div class="line"> </div>
+            <div class="line"> </div>
+            <div class="line"> </div>
+
+            <div>
     </nav>
     <br>
 
@@ -31,7 +38,7 @@
                 <input Id="name" class="form-input" type="text" name="name" required="">
                 <label for="username">Username*</label>
                 <input ID="username" class="form-input" type="text" name="username" required="">
-                <label for="email">Email*</label>
+                <label for="email">Email* </label>
                 <input ID="email" class="form-input" type="email" name="email" required="">
                 <label for="password">Password*</label>
                 <input ID="password" class="form-input" type="password" name="password"
@@ -57,7 +64,13 @@
     <%- include('./partials/foot'); %>
     <!-- js for  Burger menu-->
     <%- include('./partials/gallery-js'); %>  
-    <%- include('./partials/js-burger'); %> 
+
 </body>
+
+
+
+
+
+
 
 </html>
