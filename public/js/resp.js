@@ -32,7 +32,7 @@ fetch('https://aslam-cprg210-assignment.herokuapp.com/api/destinations')
         <a href="${item.id}">
           <img src="https://picsum.photos/id/${item.id}/250" alt="${item.title}">
         </a>
-        <figcaption> ${item.title}!</figcaption>
+        <figcaption> ${item.title}</figcaption>
         </figure>`;
 		});
 
