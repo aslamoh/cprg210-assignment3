@@ -51,7 +51,8 @@ app.get('/:id', function(request, response) {
 	Destination.findOne({ id: request.params.id }, function(error, destination) {
 		// Check for IDs that are not in our list
 		if (!destination) {
-			return response.send('Invalid ID.');
+			response.render('404-error', {});
+			// return response.send('Invalid ID.');
 		}
 
 		response.render('destination-single', destination);
@@ -68,13 +69,13 @@ app.get('/api/destinations', function(request, response) {
 
 // if no file or endpoint found, send a 404 error as a response to the browser
 
-app.use(function( request, response) {
-		response.status(404);
-		// res.find(function(error,response) {
-		response.render('404-error', {})
-		});
+app.use(function(request, response) {
+	response.status(404);
+	// res.find(function(error,response) {
+	response.render('404-error', {});
+});
 
-// app.use(function(req, res, next) 
+// app.use(function(req, res, next)
 // 	res.status(404);
 // 	res.send('404: File Not Found');
 // });
