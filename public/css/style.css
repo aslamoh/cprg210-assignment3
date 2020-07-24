@@ -24,6 +24,10 @@ h1 {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 }
+h3 {
+	background-color: blanchedalmond;
+	font-family: 'Roboto', sans-serif;
+}
 
 /*Styling for Nav bar*/
 
@@ -140,7 +144,6 @@ ul li.active a {
 	background: 2px;
 	color: black;
 	background-color: blanchedalmond;
-
 	cursor: pointer;
 	border-radius: 8px;
 }
@@ -191,8 +194,7 @@ ul li.active a {
 	display: flex;
 	align-items: center;
 	margin: auto;
-	background-color: rgb(22, 223, 219);
-	height: 533px;
+	height: 800px;
 	background-image: url(/images/login.jpg);
 	background-size: cover;
 }
@@ -326,7 +328,7 @@ h3 {
 /*******************/
 /**** button  ****/
 /*******************/
-.btn-next {
+/* .btn-next {
 	padding: 8px 20px;
 	align-items: center;
 	justify-content: center;
@@ -335,13 +337,12 @@ h3 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
-	background: 4px;
 	color: black;
 	text-align: center;
 	cursor: pointer;
 	border-radius: 8px;
 	background-color: blanchedalmond;
-}
+} */
 
 figure {
 	display: inline-flexbox;
@@ -373,7 +374,8 @@ input:required:valid {
 
 #message p {
   padding: 5px 35px;
-  font-weight: bold;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
 
