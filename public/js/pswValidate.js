@@ -62,10 +62,12 @@ function Validate() {
 
   if (password != confirmPassword) {
         confirmPassword = ""
+        document.getElementById("repassword").style.backgroundColor = "red";
     alert("Passwords do not match.");
-    document.getElementById("repassword").style.backgroundColor = "white";
-    document.getElementById("repassword").value = ""
+        document.getElementById("repassword").value = ""
     return false;
   }
+  document.getElementById("repassword").style.backgroundColor = "white";
   return true;
+  
 }
