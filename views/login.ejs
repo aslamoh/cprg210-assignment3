@@ -6,10 +6,13 @@
 
 <body>
   <nav class="navbar h-nav-resp">
+    <div class="logo"><img src="images/logo1.png"></div>
     <!-- for combined navigation list-->
     <%- include('./partials/nav-list'); %>
     <!-- for combined burger menu-->
     <%- include('./partials/burger-menu'); %>
+    
+
   </nav>
   <br>
   <h1 class="text-center"> Login</a></h1>
@@ -17,11 +20,11 @@
     <div class="form">
       <form action="https://formspree.io/mrgyybwk" method="POST" class="log-in">
         <label for="username">UserName* </label>
-        <input Id="username" class="form-input" type="text" name="username" placeholder=" Enter Username" required="">
+        <input Id="username" class="form-input" type="text" name="username" placeholder=" Enter Username" title="Enter Username" required>
         <label for="pwd">Password* </label>
         <input id="pwd" class="form-input" type="password"="8" name="pwd" placeholder=" Enter Password" required
           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="Invalid Password: 1  number 1 uppercase Minimum 8  characters">
+          title="Enter your Password">
         <input class="btn-drk" type="submit" value="LOGIN">
         <br>
         <br>

@@ -1,10 +1,8 @@
 /*******************/
 /**** Main Css ****/
 /*******************/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -12,7 +10,6 @@
 a {
 	color: red;
 }
-
 html {
 	scroll-behavior: smooth;
 }
@@ -29,8 +26,21 @@ h3 {
 	font-family: 'Roboto', sans-serif;
 }
 
-/*Styling for Nav bar*/
+/* visited link */
+a:visited {
+  color:black;
+}
 
+/* mouse over link */
+a:hover {
+  color: red
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/*Styling for Nav bar*/
 .navbar {
 	width: 100%;
 	display: flex;
@@ -44,10 +54,10 @@ h3 {
 	font-family: 'Roboto', sans-serif;
 }
 /*Styling for Logo*/
-.logo {
+/* .logo {
 	justify-items: center;
 	align-items: center;
-}
+} */
 .logo img {
 	margin-left: 40px;
 	display: flex;
@@ -55,7 +65,6 @@ h3 {
 	border: 3px, solid white;
 }
 /*Styling for Nav list */
-
 .nav-list {
 	width: 100%;
 	display: flex;
@@ -73,14 +82,12 @@ h3 {
 	transition: 0.6s ease;
 }
 /*Nav list hover */
-
 .nav-list li a:hover {
 	text-decoration: none;
 	background-color: blanchedalmond;
 	color: #000;
 }
 /* Set background color and image*/
-
 .background {
 	background: rgba(0, 0, 0, 0.7)url(/images/home-1.jpg);
 	background-size: cover;
@@ -89,7 +96,6 @@ h3 {
 	padding-left: 20px;
 }
 /* Nav bar hover effect*/
-
 ul li.active a {
 	background-color: blanchedalmond;
 	color: #000;
@@ -98,7 +104,6 @@ ul li.active a {
 .firstSection {
 	height: 90vh;
 }
-
 /************************************************/
 /**** first section divided into  2 section *****/
 /***********************************************/
@@ -106,7 +111,6 @@ ul li.active a {
 /***********************************/
 /**** first half for main text ****/
 /*********************************/
-
 .first-half {
 	width: 80%;
 	display: flex;
@@ -117,7 +121,6 @@ ul li.active a {
 	width: 30%;
 }
 /* first half section  box styling*/
-
 .box-main {
 	display: flex;
 	flex-direction: column;
@@ -147,9 +150,7 @@ ul li.active a {
 	cursor: pointer;
 	border-radius: 8px;
 }
-
 /* styling for main text */
-
 /* paragraph 1 */
 .box-main p1 {
 	display: flex;
@@ -170,16 +171,13 @@ ul li.active a {
 	margin: auto;
 	padding: 20px 20px;
 }
-
 /*Big logo */
-
 .second-half img {
 	width: 100%;
 }
 .destination {
 	display: flex;
 }
-
 /* destination heading*/
 .h1 {
 	text-align: center;
@@ -208,21 +206,18 @@ ul li.active a {
 	font-family: 'Roboto', sans-serif;
 }
 /* add form in contact section */
-
 fieldset {
 	border: none;
 	font-size: 20px;
 	color: black;
 	font-family: 'Roboto', sans-serif;
 }
-
 .form {
 	align-items: center;
 	max-width: 100%;
 	margin: auto;
 	border: 3px;
 }
-
 /* styling form -contact us section */
 .form label {
 	display: flex;
@@ -251,7 +246,6 @@ h3 {
 	color: black;
 	font-family: 'Roboto', sans-serif;
 }
-
 /* contact us form button- This button also use in  login/SingUp pages */
 .btn-drk {
 	padding: 8px 20px;
@@ -270,7 +264,6 @@ h3 {
 /*******************/
 /**** footer  ****/
 /*******************/
-
 .text-footer {
 	display: flex;
 	justify-content: center;
@@ -283,7 +276,6 @@ h3 {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 }
-
 /*burger menu  for  assignment 2*/
 .burger {
 	display: none;
@@ -318,32 +310,12 @@ h3 {
 
 	margin: auto;
 }
-
 .gallery img {
 	margin: auto;
 	justify-content: center;
 	width: 100%;
 	height: auto;
 }
-/*******************/
-/**** button  ****/
-/*******************/
-/* .btn-next {
-	padding: 8px 20px;
-	align-items: center;
-	justify-content: center;
-	margin-left: 600px;
-	border: 2px solid black;
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-	text-align: center;
-	cursor: pointer;
-	border-radius: 8px;
-	background-color: blanchedalmond;
-} */
-
 figure {
 	display: inline-flexbox;
 	text-align: center;
@@ -352,132 +324,44 @@ figure {
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 }
-
-input:required:invalid, input:focus:invalid {
-	
+input:required:invalid,
+input:focus:invalid {
 	background-position: right top;
 	background-repeat: no-repeat;
 }
 input:required:valid {
-	
 	background-position: right top;
 	background-repeat: no-repeat;
 }
 /*  SignUP page password validation  */
- /* The  message box is shown when the user clicks on the password field */
+/* The  message box is shown when the user clicks on the password field */
 #message {
-  color: #000;
-  background-color: blanchedalmond;
-  padding: 5px;
-  margin-top: 5px;
+	color: #000;
+	background-color: blanchedalmond;
+	padding: 5px;
+	margin-top: 5px;
 }
-
 #message p {
-  padding: 5px 35px;
+	padding: 5px 35px;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+	font-size: 15px;
 }
-
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
-  color: green;
+	color: green;
 }
-
 .valid:before {
-  position: relative;
-  left: -35px;
-  content: "✔";
+	position: relative;
+	left: -35px;
+	content: "✔";
 }
-
 /* Add a red text color and an "x" when the requirements are wrong */
 .invalid {
-  color: red;
+	color: red;
 }
-
 .invalid:before {
-  position: relative;
-  left: -35px;
-  content: "✖";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Responsive css */
-
-@media only screen and (max-width: 680px) {
-	/* for responsive style  changes */
-	.nav-list {
-		flex-direction: column;
-		text-align: center;
-	}
-	.navbar {
-		flex-direction: column;
-		transform: all0.3s ease -out;
-	}
-
-	.box-main {
-		display: flex;
-		flex-direction: column-reverse;
-		height: 80%;
-		justify-content: center;
-		align-items: center;
-		max-width: 100%;
-		counter-reset: white;
-		margin: auto;
-	}
-	.box-main p1 {
-		font-size: 40px;
-		margin: auto;
-	}
-	.btn-next {
-		padding: 8px 20px;
-		align-items: center;
-		margin-left: 60px;
-		border: 2px solid black;
-		font-family: 'Roboto', sans-serif;
-		font-size: 20px;
-		font-weight: bold;
-		background: 4px;
-		color: black;
-		text-align: center;
-		cursor: pointer;
-		border-radius: 8px;
-		background-color: blanchedalmond;
-	}
-
-	/**********************************************/
-	/***burger menu visible for responsive screen*/
-
-	.burger {
-		display: block;
-	}
-
-	/* navbar and nav-list changes for responsive screen*/
-	.h-nav-resp {
-		height: 72px;
-	}
-	.v-class-resp {
-		opacity: 0;
-	}
-	.btn-drk {
-		background-color: blanchedalmond;
-	}
-	/* adjust text-footer for responsive */
-	.text-footer {
-		
-		height: 5vh;
-		font-size: 20px;
-	}
-	
+	position: relative;
+	left: -35px;
+	content: "✖";
 }

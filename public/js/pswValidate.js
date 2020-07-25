@@ -67,7 +67,6 @@ function Validate() {
         document.getElementById("repassword").value = ""
     return false;
   }
-  document.getElementById("repassword").style.backgroundColor = "white";
   return true;
-  
+  document.getElementById("repassword").style.backgroundColor = "white";
 }

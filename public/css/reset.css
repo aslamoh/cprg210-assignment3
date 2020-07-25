@@ -1,0 +1,49 @@
+/*Responsive css */
+@media only screen and (max-width: 680px) {
+	/* for responsive style  changes */
+	.nav-list {
+		flex-direction: column;
+		text-align: center;
+	}
+	.navbar {
+		flex-direction: column;
+		transform: all0.3s ease -out;
+	}
+	.box-main {
+		display: flex;
+		flex-direction: column-reverse;
+		height: 80%;
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+		counter-reset: white;
+		margin: auto;
+	}
+	.box-main p1 {
+		font-size: 40px;
+		margin: auto;
+	}
+	/**********************************************/
+	/***burger menu visible for responsive screen*/
+	.burger {
+		display: block;
+	}
+	/* navbar and nav-list changes for responsive screen*/
+	.h-nav-resp {
+		height: 72px;
+	}
+	.v-class-resp {
+		opacity: 0;
+	}
+	.btn-drk {
+		background-color: blanchedalmond;
+	}
+	/* adjust text-footer for responsive */
+	.text-footer {
+		height: 5vh;
+		font-size: 20px;
+	}
+	.logo img {
+		visibility: hidden;
+	}
+}
