@@ -1,64 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ <!-- for combined head--> 
 <%- include('./partials/head'); %>
 <title>Welcome to Travel Expert</title>
 
 <body>
+
   <nav class="navbar h-nav-resp">
+    <!-- for combined navigation list-->
     <%- include('./partials/nav-list'); %>
-    
-
-    <!-- <ul class="nav-list v-class-resp">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="/gallery" destination">Destination </a></li>
-      <li><a href="/#contact">Contact Us</a></li>
-      <li><a href="/login">Login </a></li>
-      <li><a href="/register">SignUp</a></li>
-    </ul> -->
-
-    <!-- Burger Menu for Assignment2-->
+    <!-- for combined burger menu-->
     <%- include('./partials/burger-menu'); %>
-
   </nav>
 
   <section class="background firstSection">
     <div class="box-main">
       <div class="second-half"></div>
       <img src="images/logo.png" alt=" Company Logo" width=50% </div>
-
-
       <div class="first-half">
         <p1 class="text-big"> Get Ready for Europe with us!</p1>
         <p2 class="text-Small"> Book vacation packages with Travel Expert and save your
           money, Guaranteed!</p2>
         <div class="buttons">
           <button class="btn">
-            <a href="/register"> SignUp
-          </button></a></button>
+            <a href="/register"> SignUp</a>
+          </button>
         </div>
-      </div>
-
+    </div>
   </section>
   <h1 class="text-center">Destination Gallery</h1>
-
   <section class="destination">
-    <main class="gallery"> </main>
-
-    
+  <main class="gallery"> </main>
   </section>
-
-  
   <h1 class="text-center"> Contact Us </h1>
-
   <section class="contact" id="contact">
     <div class="form">
-
       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mrgyybwk"
         method="post">
-
-
-
         <fieldset id="fs-frm-inputs">
           <label for="full-name">Full Name*</label>
           <input id="full-name" class="form-input" type="text" name="name" placeholder="First and Last" required="">
@@ -72,14 +50,14 @@
         </fieldset>
         <input class="btn-drk" type="submit" value="Log-in">
       </form>
-
     </div>
-
   </section>
- 
+  <!--  for combined  footer-->
   <%- include('./partials/foot'); %>
+   <!---->
   <script src="js/resp.js"></script>
-  <%- include('./partials/js-burger'); %> 
+  <!-- js for combined Burger menu-->
+  <%- include('./partials/js-burger'); %>
 </body>
 
 </html>
