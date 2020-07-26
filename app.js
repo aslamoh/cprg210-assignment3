@@ -6,7 +6,7 @@ const dotenv = require('dotenv').config();
 // Models
 const Destination = require('./models/destination.js');
 
-// Hide creds from repo
+// Hide creds. from repo
 const mongoDB = process.env.MONGODB_URL;
 
 // Set up default mongoose connection
