@@ -1,3 +1,4 @@
+// burger menu responsive js
 const burger = document.querySelector('.burger');
 const navbar = document.querySelector('.navbar');
 const navList = document.querySelector('.nav-list');

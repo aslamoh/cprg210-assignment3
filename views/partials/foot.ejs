@@ -1,5 +1,10 @@
 <footer class="footer">
   <p class="text-footer">
-    &copy; Copyright<span style="color:RED"> 2020 </span>All rights reserved
+    &copy; Copyright<span id="copyYear" style="color:RED" ></span> Travel Expert
   </p>
 </footer>
+<script>
+  var currentYear = new Date().getFullYear();
+  document.getElementById("copyYear").innerHTML = currentYear;
+
+</script>
