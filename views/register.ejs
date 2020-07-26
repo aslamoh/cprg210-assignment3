@@ -4,7 +4,7 @@
 <%- include('./partials/head'); %>
 <title>Travel Expert/SignUp</title>
 
-<body>
+<body onload="message()">
     <nav class="navbar h-nav-resp">
     <div class="logo"><img src="images/logo1.png"></div>
         <!-- for combined navigation list-->
@@ -26,7 +26,7 @@
                 <label for="password">Password</label>
                 <input ID="password" class="form-input" type="password" name="password"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title=" Select your Password" required></label>
-                <div id="message">
+                <div id="message" onload="message()">
                     <h4>Password must contain the following:</h4>
                     <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
                     <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
