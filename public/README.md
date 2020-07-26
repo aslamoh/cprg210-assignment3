@@ -1,18 +1,53 @@
 # CPRG- 210  Web Application  Development 
-12 July 2020
+26 July 2020
+# Node Final-Deployed Travel Experts Website
+Deploy a multi-page website using express ,EJS and Mongoose. Travel expert website have a database -driven "Destinations" gallery deployed to Heroku and MongoDB Atlas.
 
-# Assignment #2
- Travel Expert
+# Project setup
+Dependencies:
+ "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "heroku": "^7.42.4",
+    "moments": "0.0.2",
+    "mongoose": "^5.9.24"
+    
+Custom 404 page:
+create a 404-error.ejs page when a file or endpoint cannot be found.
 
-Three pages website  named, "index.html","register.htm"l and "login.html"
-This is static web site for client Travel Expert , signing up new users is a primary goal of the company.
+Mongoose  connection authenticated using .env file.
 
-# Design 2
-Fixed bugs for Assignment1  and modified the desing as needed.
+# Views setup
+All static HTML served with EJS  view templates. 
 
-# From validation 
+Repeating page elements ( head, nav, footer , burger menu) move to separate template " partials in a views/partials directory.
 
-Used HTML5 form validation to enhance  registration  and login forms;
+Endpoint handlers to render and serve each page template.
+
+# Schema /model definition
+
+define Destination model  according to database requirements.
+
+# Dynamic HTML
+
+create destination /:id  handler in express app.
+
+display  destination  title , description  and url 
+
+# Additional requirements
+
+each page have a unique page title.
+
+each page readable and usable on mobile.
+
+
+# GitHub repo link 
+https://github.com/aslamoh/cprg210-assignment3.git 
+
+
+# Deployed site link :
+https://aslam-cprg210-assignment.herokuapp.com/
 
 
 # Built With 

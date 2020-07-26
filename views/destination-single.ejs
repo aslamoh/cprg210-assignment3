@@ -1,48 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+<<%- include('./partials/head'); %> <title>Travel Expert/Destination</title>
 
-<<%- include('./partials/head'); %>
-<title>Travel Expert/Destination</title>
+  <body>
 
-
-<body>
     <header>
-  <nav class="navbar h-nav-resp">
-    <ul class="nav-list v-class-resp">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="/gallery" destination">Destination </a></li>
-    </ul>
-    <%- include('./partials/burger-menu'); %>
-
-
-    <div>
-
-
-  </nav>
- 
-
-
+      <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/gallery" destination">Destination </a></li>
+        </ul>
+        <%- include('./partials/burger-menu'); %>
+      </nav>
       <figure>
-      
-  
+        <img src="http://picsum.photos/id/<%= id %>/600" alt="<%= title %>">
+        <figcaption>Best Place to Travel in 20202:<%= title %></figcaption>
+        <figcaption> Description: <%=description%> </figcaption>
+        <figcaption> Read More <a href=<%=attribution.url%>><%=attribution.url%></a></figcaption>
+      </figure>
+    </header>
+    
+    <%- include('./partials/foot'); %>
+    <%- include('./partials/js-burger'); %>
+  </body>
 
-      <img src="http://picsum.photos/id/<%= id %>/600" alt="<%= title %>">
-      <figcaption>Best Place to Travel in 20202:<%= title %></figcaption>
-
-      <figcaption> Description: <%=description%> </figcaption> 
-      <figcaption> Read More <a href=<%=attribution.url%>><%=attribution.url%></a></figcaption></figure>
-			
-
-      
-
-    </figure>
-  
-  </header>
-  
-
-
-  <%- include('./partials/foot'); %>
-  <%- include('./partials/js-burger'); %> 
-
-</body>
 </html>

@@ -5,33 +5,19 @@
 
 <body>
   <nav class="navbar h-nav-resp">
-    <div class="logo"><img src="images/logo1.png"></div>
-    <%- include('./partials/nav-list'); %>
-
-    <!-- Burger Menu for Navbar-->
-    <%- include('./partials/burger-menu'); %>
-  </nav>
-
+      <div class="logo"><img src="images/logo1.png"></div>
+      <%- include('./partials/nav-list'); %>
+     <!-- Burger Menu for Navbar-->
+      <%- include('./partials/burger-menu'); %>
+      </nav>
   <br>
-  <style>
+  <main class="gallery"></main>
 
-  </style>
-  </head>
+  <%- include('./partials/foot'); %>
 
-  <body>
-    <main class="gallery">
-
-    </main>
-
-
-
-
-    <%- include('./partials/foot'); %>
-    <script src="js/gallery.js"></script>
-    <%- include('./partials/js-burger'); %>
-
-
-
-  </body>
+  <script src="js/gallery.js"></script>
+  
+  <%- include('./partials/js-burger'); %>
+</body>
 
 </html>

@@ -74,12 +74,7 @@ app.use(function( request, response) {
 		response.render('404-error', {})
 		});
 
-// app.use(function(req, res, next) 
-// 	res.status(404);
-// 	res.send('404: File Not Found');
-// });
-
-// start up server
+/// start up server
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function() {
