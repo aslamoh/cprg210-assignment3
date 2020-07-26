@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
+const moment = require('moment');
+const cors = require("cors");
 
 // Models
 const Destination = require('./models/destination.js');
