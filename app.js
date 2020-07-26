@@ -51,9 +51,9 @@ app.get('/:id', function(request, response) {
 	Destination.findOne({ id: request.params.id }, function(error, destination) {
 		// Check for IDs that are not in our list
 		if (!destination) {
-			return response.send('Invalid ID.');
+			// return response.send('Invalid ID.');
+			 return response.render('404-error', {});
 		}
-
 		response.render('destination-single', destination);
 	});
 });
